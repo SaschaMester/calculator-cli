@@ -2,6 +2,10 @@
 // #include <conio.h> // not needed in this scope.
 // #include <cmath> // not needed in this scope.
 
+// I included <conio.h> because I originally wanted to fetch the
+// mathematical operator via the getch() method which is declared
+// in conio.h.
+
 using namespace std;
 
 float digit1, digit2, result;
