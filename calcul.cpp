@@ -40,6 +40,7 @@ int main(void)
 		return 0;
 	}
 
+	// also accept ":" for division
 	if (operate == ":") {
 		operate = "/";
 	}
