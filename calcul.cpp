@@ -29,17 +29,23 @@ int main(void)
 		cout << "Das Ergebnis lautet: " << digit1 - digit2 << endl;
 		return 0;
 	}
-	
+
+	// also accept "x" or "X" for multiplication
+	if (operate == "x" || operate == "X") {
+		operate = "*";
+	}
+
 	if (operate == "*") {
 		cout << "Das Ergebnis lautet: " << digit1 * digit2 << endl;
 		return 0;
 	}
-	
+
 	if (operate == ":") {
 		operate = "/";
 	}
-	
+
 	if (operate == "/") {
+		// avoid division by zero
 		if (digit2 != 0) {
 			cout << "Das Ergebnis lautet: " << digit1 / digit2 << endl;
 			return 0;
